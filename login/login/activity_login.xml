@@ -128,7 +128,7 @@
                     android:background="#00FFFFFF"
                     android:textColor="#898989"
                     android:textSize="13sp"
-                    android:text="아이디 찾기    |" />
+                    android:text="가입정보 찾기    |" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/login_btn_findPW"
