@@ -7,7 +7,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ones_02.LoginActivity;
 
 public class ActivityLogout extends AppCompatActivity {
     @Override
