@@ -26,9 +26,20 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/join_edittext_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/shape_login_edittext"
+            android:textColor="#808080"
+            android:textColorHint="#808080"
+            android:paddingLeft="15dp"
+            android:hint="이름" />
+
+        <EditText
             android:id="@+id/join_edittext_email"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="1dp"
             android:background="@drawable/shape_login_edittext"
             android:textColor="#808080"
             android:textColorHint="#808080"
