@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/alarm_btn_back"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerInside"
+            android:layout_gravity="left|center"
+            android:src="@drawable/img_ic_backbtn"
+            android:background="#00FFFFFF"/> <!-- 뒤로가기 버튼-->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" /> <!--정렬용 여백-->
+    </LinearLayout> <!-- 상단바 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3"
+        /> <!-- 분리선 -->
+
+    <LinearLayout
+        android:id="@+id/alarm_table"
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_ic_alarmbg"
+            android:background="#00ffffff"/> <!-- 알림 아이콘 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/alarm_text_username"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:fontFamily="@font/nanumbarungothic"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="사용자" /> <!-- 유저 이름-->
+
+            <TextView
+                android:id="@+id/alarm_text_content"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:fontFamily="@font/nanumbarungothic"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:text=" 님이 내 게시글을 좋아합니다" /> <!-- 알림 내용-->
+
+        </LinearLayout> <!-- 알림 내용-->
+
+
+    </LinearLayout> <!-- 알림-->
+
+</LinearLayout>
