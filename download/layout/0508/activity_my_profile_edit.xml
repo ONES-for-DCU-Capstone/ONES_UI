@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBFBFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/myprofileedit_btn_back"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_ic_backbtn" /> <!-- 뒤로가기 -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 프로필 수정"
+            android:textColor="#37c467"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/myprofileedit_btn_save"
+
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_ic_savebtn"
+            app:tint="#37c467" /> <!-- 뒤로가기 -->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <FrameLayout
+        android:id="@+id/myprofileedit_btn_img"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/user_profile_picture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/shape_profilebtn_circle"
+            android:scaleType="centerInside" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/shape_green_circle"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_ic_settingbtn"
+                app:tint="@color/white" />
+        </FrameLayout> <!-- 사진 수정-->
+
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/myprofile_text_username"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@null"
+        android:text="닉네임"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/myprofileedit_edit_nickname"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:hint="변경할 닉네임을 입력하세요."
+        android:textSize="16sp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/shape_profile_nicknameedit"/>
+
+
+
+</LinearLayout>
