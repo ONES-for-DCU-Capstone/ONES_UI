@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FBFBFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/manager_report_user_btn_back"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_ic_backbtn"
+            app:tint="#3776c4" /> <!-- 뒤로가기 -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신고 유저 관리"
+            android:textColor="#3776c4"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/myprofileedit_btn_save"
+
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_ic_savebtn"
+            app:tint="#00ffffff" /> <!-- 뒤로가기 -->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+
+    <LinearLayout
+        android:id="@+id/manager_report_grp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="1dp"
+        android:background="@drawable/shape_profile_nicknameedit"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/post_feed_product_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"> <!-- 상품 테이블 -->
+
+            <ImageButton
+                android:id="@+id/manager_report_user_img_img"
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerInside"
+                android:background="@drawable/shape_profilebtn_circle"
+
+                android:src="@drawable/img_photo" /> <!-- 상품 이미지-->
+
+            <TextView
+                android:id="@+id/manager_report_user_text_name"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="유저이름"
+                android:textSize="21dp"
+                android:textColor="#000000"
+                android:textStyle="bold" /> <!-- 제목 -->
+
+        </LinearLayout> <!-- 상품 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/manager_report_user_btn_state"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarungothic"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="상태 변경" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarungothic"
+                android:layout_margin="10dp"
+                android:textColor="#E3E3E3"
+                android:textSize="18sp"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/manager_report_user_btn_user"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarungothic"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="게시글 관리" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarungothic"
+                android:layout_margin="10dp"
+                android:textColor="#E3E3E3"
+                android:textSize="18sp"
+                android:text="|" />
+
+            <TextView
+                android:id="@+id/manager_report_user_btn_reason"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nanumbarungothic"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:text="신고사유 관리" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
+
+    </LinearLayout>
+</LinearLayout>
