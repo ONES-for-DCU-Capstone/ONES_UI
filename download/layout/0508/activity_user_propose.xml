@@ -79,10 +79,11 @@
         <LinearLayout
             android:id="@+id/userpropose_item"
 
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="1dp"
             android:gravity="center_vertical">
 
             <TextView
@@ -111,7 +112,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="1dp"
             android:gravity="center_vertical">
 
             <TextView
@@ -139,7 +141,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="1dp"
             android:gravity="center_vertical">
 
             <TextView
@@ -166,8 +169,6 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:background="#E3E3E3" />
 
         <TextView
@@ -188,7 +189,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:layout_marginBottom="1dp"
             android:gravity="center_vertical">
 
             <TextView
@@ -223,6 +225,11 @@
 
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" />
 
 
 
