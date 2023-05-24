@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FBFBFB"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/pl">
+
+        <LinearLayout
+            android:id="@+id/post_feed_product_table"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal"> <!-- 상품 테이블 -->
+
+            <!-- 상품 이미지-->
+
+            <ImageView
+                android:id="@+id/post_feed_product_img"
+
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/shape_round_photo"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/img_photo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"> <!--상품 내용 -->
+
+                <TextView
+                    android:id="@+id/post_feed_product_title"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제목"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold" /> <!-- 제목 -->
+
+                <TextView
+                    android:id="@+id/post_feed_product_time"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성시간"
+                    android:textSize="13dp"
+                    android:textColor="#888888"
+                    android:textStyle="bold" /> <!-- 작성 시간-->
+
+                <TextView
+                    android:id="@+id/post_feed_product_price"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가격"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#888888"
+                    android:textStyle="bold" /> <!-- 가격 -->
+
+
+                <LinearLayout
+                    android:id="@+id/post_feed_product_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"                     >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/post_feed_product_tag"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+
+                        android:background="@drawable/shape_tagbox"
+                        android:text="#태그"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+                <!--                <ImageView-->
+<!--                    android:id="@+id/chat_btt"-->
+<!--                    android:layout_width="35dp"-->
+<!--                    android:layout_height="35dp"-->
+<!--                    android:layout_marginLeft="8dp"-->
+<!--                    android:layout_marginTop="2dp"-->
+<!--                    android:src="@android:drawable/sym_action_chat" />-->
+            </LinearLayout>
+        </LinearLayout> <!-- 상품 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"/> <!-- 구분선 -->
+
+    </LinearLayout>
+
+</LinearLayout>
