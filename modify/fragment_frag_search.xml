@@ -217,31 +217,33 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
         android:gravity="center_horizontal"
-        android:orientation="horizontal">
+        android:background="@drawable/shape_profile_nicknameedit"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:layout_width="180dp"
-            android:layout_height="250dp"
-            android:layout_marginRight="7dp"
-            android:elevation="1dp"
-            android:background="@drawable/shape_profile_nicknameedit"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:layout_gravity="center_vertical"
                 android:id="@+id/search_img_recipe"
                 android:layout_width="180dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 android:src="@drawable/img_searchex1"
-                android:background="@drawable/shape_profile_nicknameedit"/> <!-- 유저 프로필 사진 -->
+                android:background="@drawable/shape_profile_nicknameedit"/> <!-- 게시물 사진 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:gravity="center_vertical">
 
 
@@ -251,9 +253,10 @@
                     android:layout_height="wrap_content"
                     android:background="#00ffffff"
                     android:fontFamily="@font/nanumbarungothic"
-                    android:textSize="15sp"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
                     android:text="버터 초코쿠키 만들기" /> <!-- 유저 이름-->
 
 
@@ -273,56 +276,70 @@
 
         </LinearLayout><!--레시피 게시물(item)-->
 
+
+    </LinearLayout> <!-- 추천 레시피 게시글 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/shape_profile_nicknameedit"
+        android:orientation="vertical">
+
         <LinearLayout
-            android:layout_width="180dp"
-            android:elevation="1dp"
-            android:layout_height="250dp"
-            android:background="@drawable/shape_profile_nicknameedit"
-            android:orientation="vertical">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:layout_gravity="center_vertical"
                 android:layout_width="180dp"
-                android:layout_height="150dp"
+                android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/img_searchex2"
-                android:background="@drawable/shape_profile_nicknameedit"/> <!-- 유저 프로필 사진 -->
+                android:src="@drawable/img_photo"
+                android:background="@drawable/shape_profile_nicknameedit"/> <!-- 게시물 사진 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:gravity="center_vertical">
 
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#00ffffff"
                     android:fontFamily="@font/nanumbarungothic"
-                    android:textSize="15sp"
+                    android:textSize="16sp"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:text="알리오올리오 대령이오" /> <!-- 유저 이름-->
+                    android:layout_marginBottom="10dp"
+                    android:text="제목" /> <!-- 유저 이름-->
+
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#00ffffff"
                     android:layout_marginTop="5dp"
-                    android:layout_marginRight="15dp"
                     android:fontFamily="@font/nanumbarungothic"
                     android:textSize="13sp"
+                    android:layout_marginRight="25dp"
                     android:textColor="#808080"
-                    android:text="특별한 메뉴 하나로                오늘 우리집은 고급 레스토랑!  특별한 메뉴로 특별한 하루를" /> <!-- 채팅 내용-->
+                    android:text="내용" /> <!-- 채팅 내용-->
 
-            </LinearLayout>
+            </LinearLayout> <!-- 채팅 -->
 
-        </LinearLayout>
+        </LinearLayout><!--레시피 게시물(item)-->
+
 
     </LinearLayout> <!-- 추천 레시피 게시글 -->
+
 
 
 </LinearLayout>
