@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FBFBFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="horizontal" > <!-- 상단 검색창 -->
+
+        <EditText
+            android:id="@+id/search__edittext_word"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_login_edittext"
+            android:hint="검색어를 입력해주세요."
+            android:paddingLeft="15dp"
+            android:textSize="18sp" /> <!-- 검색어 입력 박스 -->
+
+        <ImageButton
+            android:id="@+id/search__btn"
+
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img_ic_searchbtn2"
+            android:background="#00FFFFFF"
+            app:tint="#808080" /> <!-- 검색 돋보기 -->
+
+    </LinearLayout> <!-- 상단바 -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"> <!-- 추천 검색어 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="17sp"
+            android:textColor="#808080"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:text="인기 검색어" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal"> <!-- 태그 테이블 -->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/search_tag"
+
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:elevation="1dp"
+                android:text="#분모자떡볶이"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 레시피 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:elevation="1dp"
+                android:text="#고구마맛탕"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 검색어 -->
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:elevation="1dp"
+                android:text="#토마토쥬스"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 검색어 -->
+        </LinearLayout> <!-- 예시 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal"> <!-- 태그 테이블 -->
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="10dp"
+                android:elevation="1dp"
+                android:paddingRight="10dp"
+                android:text="#보쌈"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 레시피 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="10dp"
+                android:elevation="1dp"
+                android:paddingRight="10dp"
+                android:text="#감자샐러드"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 검색어 -->
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:elevation="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="#고로케"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 검색어 -->
+        </LinearLayout> <!-- 예시 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="horizontal"> <!-- 태그 테이블 -->
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="10dp"
+                android:elevation="1dp"
+                android:paddingRight="10dp"
+                android:text="#블랙타이거크림파스타"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 레시피 -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="#치킨"
+                android:textSize="15dp"
+                android:elevation="1dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 검색어 -->
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_margin="3dp"
+                style="?android:attr/borderlessButtonStyle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="#김말이"
+                android:textSize="15dp"
+                android:elevation="1dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_tagbox" /> <!-- 추천 검색어 -->
+        </LinearLayout> <!-- 예시 -->
+        <!-- 기능 구현 시 수정 필요 -->
+
+
+    </LinearLayout> <!-- 인기 검색어 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"> <!-- 추천 검색어 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="17sp"
+            android:textColor="#808080"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:text="오늘의 HOT 레시피" />
+
+    </LinearLayout> <!-- 오늘의 HOT 레시피 문구 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:layout_marginRight="7dp"
+            android:elevation="1dp"
+            android:background="@drawable/shape_profile_nicknameedit"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_gravity="center_vertical"
+                android:id="@+id/search_img_recipe"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_searchex1"
+                android:background="@drawable/shape_profile_nicknameedit"/> <!-- 유저 프로필 사진 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:id="@+id/search_text_recipe_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="버터 초코쿠키 만들기" /> <!-- 유저 이름-->
+
+
+                <TextView
+                    android:id="@+id/search_text_recipe_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="13sp"
+                    android:layout_marginRight="25dp"
+                    android:textColor="#808080"
+                    android:text="버터가 듬뿍 들어간 촉촉한       초코쿠키, 이제 집에서        직접 만들어 즐보세요 :)" /> <!-- 채팅 내용-->
+
+            </LinearLayout> <!-- 채팅 -->
+
+        </LinearLayout><!--레시피 게시물(item)-->
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:elevation="1dp"
+            android:layout_height="250dp"
+            android:background="@drawable/shape_profile_nicknameedit"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_gravity="center_vertical"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_searchex2"
+                android:background="@drawable/shape_profile_nicknameedit"/> <!-- 유저 프로필 사진 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="알리오올리오 대령이오" /> <!-- 유저 이름-->
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="13sp"
+                    android:textColor="#808080"
+                    android:text="특별한 메뉴 하나로                오늘 우리집은 고급 레스토랑!  특별한 메뉴로 특별한 하루를" /> <!-- 채팅 내용-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout> <!-- 추천 레시피 게시글 -->
+
+
+</LinearLayout>
