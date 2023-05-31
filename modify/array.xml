@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>둘러보기</item>
+        <item>채소</item>
+        <item>과일</item>
+        <item>정육</item>
+        <item>빵/떡</item>
+        <item>과자/음료/간식</item>
+        <item>양념/가루/견과</item>
+        <item>유제품/계란</item>
+        <item>수산/건어물</item>
+        <item>면/통조림/가공</item>
+        <item>커피/차</item>
+        <item>반찬</item>
+
+    </string-array>
+
+</resources>
