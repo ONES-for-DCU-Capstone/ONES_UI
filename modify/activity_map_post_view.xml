@@ -141,6 +141,16 @@
                 android:layout_marginRight="10dp"
                 android:orientation="vertical">
 
+                <TextView
+                    android:id="@+id/post_view_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:text="카테고리"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="#FF898989"
+                    android:textSize="14sp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -194,6 +204,19 @@
                     android:text="내용"
                     android:textColor="#FF898989"
                     android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/map_post_feed_product_tag"
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="60dp"
+                    android:layout_height="28dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="#태그"
+                    android:textSize="15dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/shape_tagbox" /> <!-- 태그 박스 -->
+
             </LinearLayout> <!-- 글 내용 -->
 
         </LinearLayout> <!-- 글 -->
@@ -245,8 +268,7 @@
                 android:textStyle="bold"
                 android:textColor="#ffffff"
                 android:background="@drawable/shape_greenbtn"
-                style="?android:attr/borderlessButtonStyle"
-                />
+                style="?android:attr/borderlessButtonStyle" />
         </LinearLayout> <!-- 하단바 -->
     </LinearLayout>
 </LinearLayout>

@@ -90,7 +90,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemBackground="#FBFBFB"
         app:itemIconTint="#37c467"
         app:itemTextColor="#37c467"
         app:menu="@menu/menu_bottom" />
