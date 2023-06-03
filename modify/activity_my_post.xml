@@ -124,7 +124,8 @@
                         style="?android:attr/borderlessButtonStyle"
                         android:text="#태그"
                         android:textSize="15dp"
-                        android:textColor="#FFFFFF" /> <!-- 태그 박스 -->
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/shape_tagbox"/> <!-- 태그 박스 -->
 
 
                 </LinearLayout>
