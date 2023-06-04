@@ -231,7 +231,14 @@
                 android:textSize="18sp"
                 android:layout_marginLeft="3dp"
                 android:text="카테고리"
-                android:textColor="#000000" />
+                android:textColor="#000000" /><!--스피너 작동 시 삭제-->
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/categorySpinner"
+
+                android:spinnerMode="dropdown"/><!-- 스피너 코틀린 소스 작성 시 0일 때 인공지능 추천 카테고리가 출력되도록 코딩해야 함-->
 
             <ImageButton
                 android:id="@+id/post_wrt_btn_category_reset"
