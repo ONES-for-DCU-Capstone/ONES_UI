@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+
+
+        <ImageButton
+            android:id="@+id/userpropose_btn_back"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_ic_backbtn" /> <!-- 뒤로가기 -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q&amp;A"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/userpropose_btn_wrt"
+
+            android:layout_marginRight="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_ic_wrtbtn"
+            app:tint="#37c467" /> <!-- 뒤로가기 -->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:fontFamily="@font/nanumbarungothic"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="자주 묻는 Q&amp;A"/><!-- 자주 묻는 Q&A-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#37c467"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Q. "/>
+
+                <TextView
+
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#6C6C6C"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="탈퇴 방법이 궁금해요."/>
+
+
+            </LinearLayout><!-- 예시 -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#37c467"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Q. "/>
+
+                <TextView
+
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#6C6C6C"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="탈퇴 방법이 궁금해요."/>
+
+
+            </LinearLayout><!-- 예시 -->
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#37c467"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Q. "/>
+
+                <TextView
+
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#6C6C6C"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="활동 정지 기간이 궁금해요."/>
+
+
+            </LinearLayout><!-- 예시 -->
+
+
+        </LinearLayout><!-- 구현 시 삭제 -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/userProposeRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbarLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" /><!-- 구분선 -->
+
+
+        <TextView
+            android:fontFamily="@font/nanumbarungothic"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="나의 Q&amp;A"/><!-- 나의 Q&A-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/userpropose_myitem"
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_marginBottom="2dp"
+                android:gravity="center_vertical">
+
+                <TextView
+
+                    android:id="@+id/userpropose_text_respon"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#37c467"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="[응답완료]"/> <!-- 응답 여부 -->
+
+                <TextView
+
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#37c467"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Q."/> <!-- 응답 여부 -->
+
+                <TextView
+                    android:id="@+id/userpropose__text_mytitle"
+
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textColor="#FF6C6C6C"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성한 글이 안 올라와요."/> <!-- 제목 -->
+
+
+            </LinearLayout><!-- 예시 구현 시 삭제-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/userProposeMyRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/toolbarLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E3E3E3" /><!-- 구분선 -->
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

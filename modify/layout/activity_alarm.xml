@@ -41,6 +41,77 @@
         android:layout_height="1dp"
         android:background="#E3E3E3" /><!--구분 선 -->
 
+    <LinearLayout
+        android:id="@+id/chatlist_chat_table"
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"> <!-- 채팅 테이블 -->
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img_ic_alarmbg"
+            android:background="#00ffffff"/> <!-- 유저 프로필 사진 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/alarm_txt_post_title"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="5dp"
+                    android:text="[냉동망고공구(글 제목)]" /> <!-- 글 제목-->
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00ffffff"
+                    android:fontFamily="@font/nanumbarungothic"
+                    android:textSize="19sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="새로운 이벤트가 발생했습니다." />
+                <!-- 알림 내용(UI로 작성 예정-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E1E1E1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"/> <!-- 구분선 -->
+
+
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/alarmRecyclerView"
         android:layout_width="0dp"

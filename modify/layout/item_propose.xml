@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userpropose_wrt_item"
+
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:fontFamily="@font/nanumbarungothic"
+            android:textColor="#37c467"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Q. "/>
+
+        <TextView
+            android:id="@+id/userpropose_wrt_text_title"
+
+            android:fontFamily="@font/nanumbarungothic"
+            android:textColor="#FF6C6C6C"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작성한 글이 안 올라와요."/> <!-- 제목 -->
+
+
+    </LinearLayout>
+
+</LinearLayout>
